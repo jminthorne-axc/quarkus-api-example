@@ -1,6 +1,6 @@
 schemaVersion: 2.1.0
 metadata:
-  name: quarkus-api-example-code
+  name: quarkus-api-example-endpoint
 components:
   - name: tools
     container:
@@ -14,10 +14,15 @@ components:
           protocol: tcp
           targetPort: 5005
         - exposure: public
-          name: list-all-food
+          name: list-all-foods
           protocol: http
           targetPort: 8080
           path: /food
+        - exposure: public
+          name: search
+          protocol: http
+          targetPort: 8080
+          path: /food/search/Orange
       volumeMounts:
         - name: m2
           path: /home/user/.m2
