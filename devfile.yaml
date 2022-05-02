@@ -1,6 +1,8 @@
 schemaVersion: 2.1.0
 metadata:
   name: quarkus-api-example
+attributes:
+  controller.devfile.io/storage-type: ephemeral
 components:
   - name: tools
     container:
@@ -45,6 +47,9 @@ components:
         - name: PGDATA
           value: /tmp/pgdata
   - name: m2
+    volume:
+      size: 1G
+  - name: test
     volume:
       size: 1G
 commands:
