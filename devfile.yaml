@@ -1,6 +1,7 @@
 schemaVersion: 2.1.0
 metadata:
-  generateName: quarkus-api-example
+  name: quarkus-api-example-keycloak
+  generateName: quarkus-api-example-keycloak-
 attributes:
   controller.devfile.io/storage-type: ephemeral
   controller.devfile.io/scc: container-build
