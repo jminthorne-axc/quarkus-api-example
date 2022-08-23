@@ -1,0 +1,7 @@
+id: che-incubator/che-code/insiders
+registryUrl: https://eclipse-che.github.io/che-plugin-registry/main/v3 # optional
+override:                                                              # optional
+  containers:
+    - name: tools
+      memoryLimit: 3.5Gi
+      cpuLimit: 600m
