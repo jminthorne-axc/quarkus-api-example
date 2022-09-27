@@ -24,7 +24,7 @@ components:
       volumeMounts:
         - name: m2
           path: /home/user/.m2
-      memoryLimit: 6G
+      memoryLimit: 6Gi
       mountSources: true
 
   - name: ubi-minimal
